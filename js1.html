@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function idade() {
+            var nasc = prompt("Qual ano vc nasceu?", "");
+            var a = 2024, b = 2050, aresp, bresp;
+            aresp = a - nasc;
+            bresp = b - nasc;
+            alert("resposta A: " + aresp + " Resposta B: " + bresp);
+        }
+        function NovoSalario() {
+            var salario = parseInt(prompt("qual o seu salário?", ""));
+            var aumento, novo = 0;
+            aumento = (salario * 25) / 100;
+            novo = salario + aumento;
+            alert("Novo salario: " + novo);
+        }
+        function Temperatura() {
+            var c = prompt("Qual a temperatura: ", "");
+            var far;
+            far = (c * 1.8) + 32;
+            alert("Temperatura em fahrenheit: " + far)
+
+        }
+        function ParEImpar() {
+            var num = parseInt(prompt("Informe um número: ", ""));
+
+            if (num % 2 == 0) {
+                alert("O número " + num + " é par!");
+            } else {
+                alert("O número " + num + " é ímpar");
+            }
+        }
+        function mediaArit() {
+            var num1 = parseInt(prompt("Programa que calcula a média aritmetica de 3 valores \n primeiro nota: ", ""));
+            var num2 = parseInt(prompt("Segunda nota:", ""));
+            var num3 = parseInt(prompt("Terceira nota:", ""));
+            soma = num1 + num2 + num3;
+            res = soma / 3;
+            alert("A media é: " + res);
+        }
+        function TeoremaDePitagoras() {
+            var b = parseFloat(prompt("Digite o primeiro cateto: "));
+            var c = parseFloat(prompt("Digite o segundo cateto: "));
+            var a=  Math.pow(b, 2) + Math.pow(c, 2);
+            var res= Math.sqrt(a,2);
+            alert("Valor da hipotenusa "+res);
+        }
+        function CalculeoRaio() {
+            
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="idade()" value="Idade">
+    <input type="button" onclick="NovoSalario()" value="Salario">
+    <input type="button" onclick="Temperatura()" value="Temperatura">
+    <input type="button" onclick="mediaArit()" value="Média Aritmética">
+    <input type="button" onclick="TeoremaDePitagoras()" value="Teorema de Pitágoras">
+    <input type="button" onclick="CalculeoRaio()" value="Calcule o raio">
+    <input type="button" onclick="ParEImpar()" value="Par e Impar">
+</body>
+
+</html>
